@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/**
+ * 常用的scss混入类
+ */
+
+@mixin text-overflow-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin multi-text-overflow-ellipsis($line-to-show-number: 2) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-to-show-number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin box-border-shadow {
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+@mixin module-placeholder($margin-bottom: 15px, $padding: 15px) {
+    box-sizing: border-box;
+    margin-bottom: $margin-bottom;
+    padding: $padding;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}

@@ -14,10 +14,13 @@ export default {};
 
 <style lang="scss">
 .home {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     height: 100%;
 
     .demo-item {
+        flex: 0 0 auto;
         width: 100px;
         height: 50px;
         margin: 10px;

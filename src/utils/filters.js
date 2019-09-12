@@ -60,46 +60,4 @@ const formatTime = (val) => {
     return year + '-' + month + '-' + day + ' ' + hour + ':' + minutes + ':' + seconds;
 };
 
-// 格式化课程难度等级
-const formatCourseLevel = (value) => {
-    let courseLevelList = window.APP_CONFIG.levelOptions;
-    let courseLevel;
-
-    courseLevelList.forEach((item) => {
-        if (item.value === value) {
-            courseLevel = item.label;
-        }
-    });
-
-    return courseLevel;
-};
-
-// 格式化课程类型
-const formatCourseType = (type) => {
-    let courseTypeList = window.APP_CONFIG.courseTypeOptions;
-    let courseType;
-
-    courseTypeList.forEach((item) => {
-        if (item.value == type) {
-            courseType = item.label;
-        }
-    });
-
-    return courseType;
-};
-
-// 格式化系统类型
-const formatSystem = (value) => {
-    let systemList = window.APP_CONFIG.systemOptions;
-    let system;
-
-    systemList.forEach((item) => {
-        if (item.value == value) {
-            system = item.label;
-        }
-    });
-
-    return system;
-};
-
-export { formatDate, formatWeekDsy, formatTime, formatCourseLevel, formatCourseType, formatSystem };
+export { formatDate, formatWeekDsy, formatTime };

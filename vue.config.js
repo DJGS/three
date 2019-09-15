@@ -25,6 +25,7 @@ module.exports = {
             .set('@utils', resolve('src/utils'))
             .set('@pages', resolve('src/pages'))
             .set('@routers', resolve('src/routers'))
+            .set('@static', resolve('public/static'))
             .set('@components', resolve('src/components'));
 
         // 打包构建

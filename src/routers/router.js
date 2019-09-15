@@ -21,6 +21,10 @@ const routes = [
         path: '/light',
         component: () => import('@pages/light'),
     },
+    {
+        path: '/texture',
+        component: () => import('@pages/texture'),
+    },
 ];
 
 const Routers = new Router({

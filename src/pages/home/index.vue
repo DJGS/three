@@ -10,6 +10,11 @@
                 Light
             </router-link>
         </div>
+        <div class="demo-item">
+            <router-link to="/texture">
+                纹理
+            </router-link>
+        </div>
     </div>
 </template>
 

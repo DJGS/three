@@ -26,13 +26,6 @@ Object.keys(filters).forEach((key) => {
     Vue.filter(key, filters[key]);
 });
 
-// 用户信息
-let userRole = localStorage.getItem('userRole');
-
-window.APP_CONFIG.userInfo = {
-    role: userRole,
-};
-
 /* eslint-disable */
 new Vue({
     i18n,

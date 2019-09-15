@@ -3,24 +3,28 @@
  * https://router.vuejs.org/zh/guide/#html
  */
 
-import Vue from "vue";
-import Router from "vue-router";
+import Vue from 'vue';
+import Router from 'vue-router';
 
 Vue.use(Router);
 
 const routes = [
     {
-        path: "/",
-        component: () => import("@pages/home")
+        path: '/',
+        component: () => import('@pages/home'),
     },
     {
-        path: "/cube",
-        component: () => import("@pages/cube")
-    }
+        path: '/cube',
+        component: () => import('@pages/cube'),
+    },
+    {
+        path: '/light',
+        component: () => import('@pages/light'),
+    },
 ];
 
 const Routers = new Router({
-    routes
+    routes,
 });
 
 export default Routers;

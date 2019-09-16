@@ -15,6 +15,11 @@
                 纹理
             </router-link>
         </div>
+        <div class="demo-item">
+            <router-link to="/angle">
+                三角
+            </router-link>
+        </div>
     </div>
 </template>
 

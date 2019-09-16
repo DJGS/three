@@ -25,6 +25,10 @@ const routes = [
         path: '/texture',
         component: () => import('@pages/texture'),
     },
+    {
+        path: '/angle',
+        component: () => import('@pages/angle'),
+    },
 ];
 
 const Routers = new Router({

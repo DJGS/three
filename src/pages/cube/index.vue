@@ -55,11 +55,18 @@ export default {
 
             let render = () => {
                 renderer.render(scene, camera);
-                mesh.rotateY(0.01);
-                requestAnimationFrame(render);
+                // mesh.rotateY(0.01);
+                // requestAnimationFrame(render);
             };
 
             render();
+
+            // 创建控制器
+            let controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.addEventListener('change', render);
+            // 缩放：滚动—鼠标中键
+            // 旋转：拖动—鼠标左键
+            // 平移：拖动—鼠标右键
         },
     },
 

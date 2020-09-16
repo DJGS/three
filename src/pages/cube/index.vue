@@ -53,7 +53,13 @@ export default {
 
             document.getElementById('cube').append(renderer.domElement);
 
-            renderer.render(scene, camera);
+            let render = () => {
+                renderer.render(scene, camera);
+                mesh.rotateY(0.01);
+                requestAnimationFrame(render);
+            };
+
+            render();
         },
     },
 

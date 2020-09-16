@@ -17,6 +17,10 @@ const routes = [
         path: '/cube',
         component: () => import('@pages/cube'),
     },
+    {
+        path: '/vertex',
+        component: () => import('@pages/vertex'),
+    },
 ];
 
 const Routers = new Router({

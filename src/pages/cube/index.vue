@@ -17,6 +17,10 @@ export default {
             let geometry = new THREE.BoxGeometry(100, 100, 100);
             let material = new THREE.MeshLambertMaterial({
                 color: 0x0000ff,
+                // opacity: 0.7,
+                // transparent: true,
+                // 将几何图形渲染为线框。 默认值为false
+                // wireframe: true,
             });
 
             //  创建模型

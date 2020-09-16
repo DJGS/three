@@ -23,10 +23,20 @@ export default {
             let mesh = new THREE.Mesh(geometry, material);
             scene.add(mesh);
 
+            // 球型模型
+            let geometry1 = new THREE.SphereGeometry(60, 40, 40);
+            let mesh1 = new THREE.Mesh(geometry1, material);
+            scene.add(mesh1);
+            mesh1.position.set(120, 0, 0);
+
             // 光源
             let point = new THREE.PointLight(0xffffff);
             point.position.set(400, 200, 300);
             scene.add(point);
+
+            // 三维辅助坐标系
+            let axisHelper = new THREE.AxisHelper(250);
+            scene.add(axisHelper);
 
             // 环境光
             let ambient = new THREE.AmbientLight(0x444444);

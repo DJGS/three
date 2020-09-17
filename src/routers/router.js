@@ -21,6 +21,10 @@ const routes = [
         path: '/vertex',
         component: () => import('@pages/vertex'),
     },
+    {
+        path: '/material',
+        component: () => import('@pages/material'),
+    },
 ];
 
 const Routers = new Router({

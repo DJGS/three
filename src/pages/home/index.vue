@@ -6,6 +6,9 @@
         <div class="demo-item">
             <router-link to="/vertex"> 顶点 </router-link>
         </div>
+        <div class="demo-item">
+            <router-link to="/material"> 材质 </router-link>
+        </div>
     </div>
 </template>
 

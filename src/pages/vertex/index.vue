@@ -54,7 +54,7 @@ export default {
             scene.add(axisHelper);
 
             // 环境光
-            let ambient = new THREE.AmbientLight(0x444444);
+            let ambient = new THREE.AmbientLight(0x888888);
             scene.add(ambient);
 
             // 相机

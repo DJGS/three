@@ -33,7 +33,7 @@ export default {
             scene.add(mesh1);
             mesh1.position.set(120, 0, 0);
 
-            // 光源
+            // 点光源 需要设置位置
             let point = new THREE.PointLight(0xffffff);
             point.position.set(400, 200, 300);
             scene.add(point);
@@ -42,9 +42,25 @@ export default {
             let axisHelper = new THREE.AxisHelper(250);
             scene.add(axisHelper);
 
-            // 环境光
-            let ambient = new THREE.AmbientLight(0x444444);
+            // 环境光 不需要设置光源位置
+            let ambient = new THREE.AmbientLight(0x666666);
             scene.add(ambient);
+
+            // 平行光 postion 和target确定方向
+            let directionLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionLight.position.set(80, 100, 50);
+            directionLight.target = mesh;
+            // scene.add(directionLight);
+
+            // 聚光光源
+            var spotLight = new THREE.SpotLight(0xffffff);
+            // 设置聚光光源位置
+            spotLight.position.set(200, 200, 200);
+            // 聚光灯光源指向网格模型mesh2
+            spotLight.target = mesh1;
+            // 设置聚光光源发散角度
+            spotLight.angle = Math.PI / 6;
+            // scene.add(spotLight); //光对象添加到scene场景中
 
             // 相机
             let width = window.innerWidth;

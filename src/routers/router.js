@@ -33,6 +33,10 @@ const routes = [
         path: '/curve',
         component: () => import('@pages/curve'),
     },
+    {
+        path: '/texture',
+        component: () => import('@pages/texture'),
+    },
 ];
 
 const Routers = new Router({

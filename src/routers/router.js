@@ -29,6 +29,10 @@ const routes = [
         path: '/group',
         component: () => import('@pages/group'),
     },
+    {
+        path: '/curve',
+        component: () => import('@pages/curve'),
+    },
 ];
 
 const Routers = new Router({

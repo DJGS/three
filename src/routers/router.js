@@ -41,6 +41,10 @@ const routes = [
         path: '/keyframeTrack',
         component: () => import('@pages/keyframeTrack'),
     },
+    {
+        path: '/changeMove',
+        component: () => import('@pages/changeMove'),
+    },
 ];
 
 const Routers = new Router({

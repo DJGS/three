@@ -21,6 +21,9 @@
         <div class="demo-item">
             <router-link to="/keyframeTrack"> 关键帧 </router-link>
         </div>
+        <div class="demo-item">
+            <router-link to="/changeMove"> 变型动画 </router-link>
+        </div>
     </div>
 </template>
 

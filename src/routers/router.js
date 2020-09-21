@@ -37,6 +37,10 @@ const routes = [
         path: '/texture',
         component: () => import('@pages/texture'),
     },
+    {
+        path: '/keyframeTrack',
+        component: () => import('@pages/keyframeTrack'),
+    },
 ];
 
 const Routers = new Router({

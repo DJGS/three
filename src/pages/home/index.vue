@@ -18,6 +18,9 @@
         <div class="demo-item">
             <router-link to="/texture"> 贴图 </router-link>
         </div>
+        <div class="demo-item">
+            <router-link to="/keyframeTrack"> 关键帧 </router-link>
+        </div>
     </div>
 </template>
 

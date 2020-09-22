@@ -24,6 +24,9 @@
         <div class="demo-item">
             <router-link to="/changeMove"> 变型动画 </router-link>
         </div>
+        <div class="demo-item">
+            <router-link to="/star"> 星空 </router-link>
+        </div>
     </div>
 </template>
 

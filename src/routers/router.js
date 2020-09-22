@@ -45,6 +45,10 @@ const routes = [
         path: '/changeMove',
         component: () => import('@pages/changeMove'),
     },
+    {
+        path: '/star',
+        component: () => import('@pages/star'),
+    },
 ];
 
 const Routers = new Router({
